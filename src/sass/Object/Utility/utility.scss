@@ -1,0 +1,10 @@
+.u-flex {
+    display: flex;
+    flex-direction: row;
+}
+.is-active {
+    background-color: $active_color;
+    i {
+        color: $active_icon_color;
+    }
+}

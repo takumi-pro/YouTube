@@ -1,8 +1,47 @@
-.header {
-    background-color: green;
-    .search {
-        padding: 4px;
-        border-radius: 3px;
-        border: none;
-    }
+//========文字色============
+$border_color: #ccc;
+$icon_color: #666;
+
+//==========背景色=============
+$active_color: #e9e9e9;
+$active_icon_color: #f00;
+$content_bg: #f9f9f9;
+$white: #fff;
+
+//=======ヘッダー=========
+$header_height: 56px;
+
+
+@mixin baseIcon($fontSize, $color, $width, $height){
+    font-size: $fontSize;
+    color: $color;
+    width: $width;
+    height: $height;
+    box-sizing: border-box;
 }
+
+// ===========================
+// Foundation
+// ===========================
+@import './Foundation/reset';
+
+// ============================
+// Layout
+// ============================
+@import './Layout/header';
+@import './Layout/sidebar';
+@import './Layout/content';
+
+// =============================
+// Object
+// =============================
+// ---------------
+// Component
+// ---------------
+@import './Object/Component/icon';
+@import './Object/Component/sidebar';
+
+// ----------------
+// Utility
+// ----------------
+@import './Object/Utility/utility';

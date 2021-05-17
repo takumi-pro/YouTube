@@ -1,0 +1,69 @@
+.l-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: $header_height;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: $white;
+    &_logo {
+        width: 129px;
+        height: 16px;
+        margin: auto 0;
+        a {
+            width: 80px;
+            height: 16px;
+            display: inline-block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &_search {
+        min-width: 550px;
+        &_i {
+            margin: 0;
+            padding: 0 4px;
+            width: 100%;
+        }
+        &_wrap {
+            box-sizing: border-box;
+            width: 100%;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 2px 0 0 2px;
+            padding: 2px 4px;
+        }
+        &_box {
+            padding-top: 4px;
+        }
+        &_input {
+            border: none;
+            outline: none;
+            height: 100%;
+            width: 100%;
+            font-size: 16px;
+            
+        }
+        &_btn {
+            border: 1px solid #ccc;
+            cursor: pointer;
+            width: 65px;
+            border-radius: 0 2px 2px 0;
+            color: $icon_color;
+            outline:none;
+        }
+    }
+
+    &_icons {
+        .l-header_icon {
+            @include baseIcon(18px, $icon_color, 40px, 40px);
+        }
+    }
+}

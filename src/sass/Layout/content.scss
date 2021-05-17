@@ -1,0 +1,10 @@
+.l-content {
+    margin-left: 240px;
+    margin-top: $header_height;
+    background-color: $content_bg;
+    &_inner {
+        padding-top: 24px;
+        padding-left: 20px;
+        
+    }
+}
